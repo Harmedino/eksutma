@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+.nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 4px !important;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-brand img{
+  width: 50px;
+  height: 50px;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: white !important;
+    margin-left: 10px;
+}
+
+.hero {
+  position: relative;
+  height: 85vh;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 70;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-up {
+  position: relative;
+  z-index: 5;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  backdrop-filter: blur(0.2px); 
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); 
+  z-index: 2; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.hero-content a {
+  background-color: blue;
+  color: white;
+  padding: 0.7rem 1.7rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.hero-content a:hover {
+  background-color: rgb(50, 50, 197);
+    color: white;
+}
+#about .about{
+    font-size: 2rem;
+    text-transform:uppercase;
+    font-weight: 500;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the event section */
+#event {
+  padding: 50px 0;
+  background-color: rgb(209, 206, 206);
+  background-image: url('./images/IMG-20231114-WA0133.jpg'); 
+  background-size: cover; 
+   position: relative;
+}
+
+#event::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/IMG-20231114-WA0133.jpg');
+  filter: blur(10px);  
+} 
+
+.container {
+  position: relative;
+  z-index: 1; 
+}
+
+#event h2 {
+  color: #fff; /* Text color on the blurred background */
+}
+
+.event-info,
+.event-attractions {
+  background-color:rgb(76, 76, 236); /* Semi-transparent background color for content */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.event-info ul,
+.event-attractions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-info li,
+.event-attractions li {
+  margin-bottom: 10px;
+}
+
+.event-info h2,
+.event-attractions h2 {
+  color: #333; /* Text color on the content background */
+}
+  
+  
+
+
+#about {
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.img-fluid {
+  max-width: 100%; 
+  height: auto; 
+}
+
+footer {
+  padding: 20px 0;
+}
+
+.social-icons {
+  margin-top: 10px; 
+}
+
+.social-icons a {
+  margin-right: 10px; 
+  color: black; 
+  font-size: 20px; 
+}
+
+p {
+  margin-bottom: 0; /* Remove default margin for better spacing */
+}
+
+@media(max-width:540px){
+    .hero-content h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 2rem;
+      }
+}
